@@ -1,0 +1,20 @@
+@import '@style/variables'  
+  
+.fancyHeading
+  display: flex
+  align-items: center
+  flex-direction: column
+
+  &::after
+    content: ''
+    display: inline-block
+    height: 2px
+    width: 2em
+    background: $shiny
+    margin: 0.618em 0 0
+    
+.colorSHINY
+  color: $shiny
+
+.colorDARK
+  color: $dark

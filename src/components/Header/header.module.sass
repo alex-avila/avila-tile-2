@@ -1,0 +1,35 @@
+@import "@style/variables"
+@import "@style/mixins"
+
+.header
+  background: $light
+
+  a
+    color: $dark
+    text-decoration: none
+
+.wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+  max-width: 960px
+  padding: 1.45rem 1.0875rem
+
+.heading
+  margin: 0
+
+.largeNavWrapper
+  display: none;
+
+  +for-size(tablet-portrait-up)
+    display: block;
+  
+
+.navLink
+  text-decoration: none
+  text-transform: uppercase
+  color: $dark
+
+  &:not(:last-child)
+    margin: 0 1rem 0 0;
