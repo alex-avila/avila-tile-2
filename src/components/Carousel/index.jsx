@@ -28,7 +28,7 @@ const Carousel = ({ children }) => {
 
     window.addEventListener("resize", debouncedSetSlideWidth)
     return () => window.removeEventListener("resize", debouncedSetSlideWidth)
-  })
+  }, [isInitialRender, setIsInitialRender, slidesRef, debouncedSetSlideWidth])
 
   return (
     <div className={styles.carousel}>
