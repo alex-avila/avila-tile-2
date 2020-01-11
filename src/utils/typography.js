@@ -44,6 +44,9 @@ const typography = new Typography({
       /* Corrects inability to style clickable `input` types in iOS */
       "-webkit-appearance": "none",
     },
+    img: {
+      margin: 0,
+    },
   }),
 })
 
