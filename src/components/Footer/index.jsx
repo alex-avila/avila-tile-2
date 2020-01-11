@@ -22,7 +22,7 @@ const iconsOptions = [
 ]
 
 const mappedSocialLinks = iconsOptions.map(({ icon, alt }) => (
-  <a className={styles.link} href="#">
+  <a key={alt} className={styles.link} href="#">
     <img
       className={alt === "Email" ? styles.emailIcon : styles.icon}
       src={icon}
