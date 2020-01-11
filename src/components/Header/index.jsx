@@ -1,15 +1,17 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+
 import SmallNav from "@components/SmallNav"
 import styles from "./header.module.sass"
 
-const Header = ({ siteTitle }) => (
+import logo from "../../images/logo-white-tagline.svg"
+
+const Header = () => (
   <header className={styles.header}>
     <div className={styles.wrapper}>
-      <h1 className={styles.heading}>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
+      <Link to="/" className={styles.logoWrapper}>
+        <img className={styles.logo} src={logo} alt="Avila Tile" />
+      </Link>
       <div>
         <div className={styles.largeNavWrapper}>
           <nav>
@@ -35,13 +37,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
