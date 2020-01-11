@@ -3,56 +3,41 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import styles from "./footer.module.sass"
 
-const Footer = () => {
-  const {
-    allImageSharp: {
-      edges: [facebookEdge, instagramEdge],
-    },
-  } = useStaticQuery(
-    graphql`
-      query {
-        allImageSharp(
-          filter: {
-            original: { src: { regex: "/facebook-icon|instagram-icon/" } }
-          }
-        ) {
-          edges {
-            node {
-              resize(width: 72) {
-                src
-              }
-            }
-          }
-        }
-      }
-    `
-  )
+import facebookIcon from "../../images/facebook-icon.svg"
+import instagramIcon from "../../images/instagram-icon.svg"
+import emailIcon from "../../images/email-icon.svg"
+const iconsOptions = [
+  {
+    icon: facebookIcon,
+    alt: "Facebook",
+  },
+  {
+    icon: instagramIcon,
+    alt: "Instagram",
+  },
+  {
+    icon: emailIcon,
+    alt: "Email",
+  },
+]
 
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.wrapper}>
-        <small>
-          © {new Date().getFullYear()} Avila Tile. All Rights Reserved
-        </small>
-        <div className={styles.links}>
-          <a className={styles.link} href="#">
-            <img
-              className={styles.icon}
-              src={facebookEdge.node.resize.src}
-              alt="Facebook"
-            />
-          </a>
-          <a className={styles.link} href="#">
-            <img
-              className={[styles.icon, styles.instagramIcon].join(" ")}
-              src={instagramEdge.node.resize.src}
-              alt="Instagram"
-            />
-          </a>
-        </div>
-      </div>
-    </footer>
-  )
-}
+const mappedSocialLinks = iconsOptions.map(({ icon, alt }) => (
+  <a className={styles.link} href="#">
+    <img
+      className={alt === "Email" ? styles.emailIcon : styles.icon}
+      src={icon}
+      alt={alt}
+    />
+  </a>
+))
+
+const Footer = () => (
+  <footer className={styles.footer}>
+    <div className={styles.wrapper}>
+      © {new Date().getFullYear()} Avila Tile. All Rights Reserved
+      <div className={styles.links}>{mappedSocialLinks}</div>
+    </div>
+  </footer>
+)
 
 export default Footer
