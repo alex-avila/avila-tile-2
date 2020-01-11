@@ -1,18 +1,29 @@
-@mixin for-size($size)
-  @if $size == phone-only
-    @media (max-width: 599px)
+@mixin above($size)
+  @if $size == big-phone
+    @media (min-width: 425px)
       @content
-  @else if $size == tablet-portrait-up
-    @media (min-width: 600px)
+  @if $size == tablet
+    @media (min-width: 768px)
       @content
-  @else if $size == tablet-landscape-up
-    @media (min-width: 900px)
+  @if $size == desktop
+    @media (min-width: 1024px)
       @content
-  @else if $size == desktop-up
-    @media (min-width: 1200px)
+  @if $size == big-desktop
+    @media (min-width: 1440px)
       @content
-  @else if $size == big-desktop-up
-    @media (min-width: 1800px)
+
+@mixin below($size)
+  @if $size == big-phone
+    @media (max-width: 424px)
+      @content
+  @if $size == tablet
+    @media (max-width: 767px)
+      @content
+  @if $size == desktop
+    @media (max-width: 1023px)
+      @content
+  @if $size == big-desktop
+    @media (max-width: 1439px)
       @content
   
 @mixin filter($filter-type,$filter-amount)
