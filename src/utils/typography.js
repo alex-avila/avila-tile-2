@@ -1,35 +1,51 @@
 import Typography from "typography"
-import bootstrapTheme from "typography-theme-bootstrap"
-bootstrapTheme.overrideThemeStyles = ({ rhythm }, options) => ({
-  "a, a:visited": {
-    color: "default",
-  },
-  button: {
-    border: "none",
-    margin: 0,
-    padding: 0,
-    width: "auto",
-    overflow: "visible",
 
-    background: "transparent",
+const typography = new Typography({
+  baseFontSize: "16px",
+  baseLineHeight: 1.5,
+  scaleRatio: 4.5,
+  googleFonts: [
+    {
+      name: "Roboto",
+      styles: ["300", "400", "400i", "700"],
+    },
+    {
+      name: "Raleway",
+      styles: ["700"],
+    },
+  ],
+  headerFontFamily: ["Roboto", "sans-serif"],
+  bodyFontFamily: ["Roboto", "sans-serif"],
+  headerWeight: 300,
+  overrideStyles: () => ({
+    h4: {
+      fontWeight: "bold",
+    },
+    button: {
+      border: "none",
+      margin: 0,
+      padding: 0,
+      width: "auto",
+      overflow: "visible",
 
-    /* inherit font & color from ancestor */
-    color: "inherit",
-    font: "inherit",
+      background: "transparent",
 
-    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-    lineHeight: "normal",
+      /* inherit font & color from ancestor */
+      color: "inherit",
+      font: "inherit",
 
-    /* Corrects font smoothing for webkit */
-    "-webkit-font-smoothing": "inherit",
-    "-moz-osx-font-smoothing": "inherit",
+      /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+      lineHeight: "normal",
 
-    /* Corrects inability to style clickable `input` types in iOS */
-    "-webkit-appearance": "none",
-  },
+      /* Corrects font smoothing for webkit */
+      "-webkit-font-smoothing": "inherit",
+      "-moz-osx-font-smoothing": "inherit",
+
+      /* Corrects inability to style clickable `input` types in iOS */
+      "-webkit-appearance": "none",
+    },
+  }),
 })
-
-const typography = new Typography(bootstrapTheme)
 
 // Export helper functions
 export const { scale, rhythm, options } = typography
