@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - {
+              label: "Images",
+              name: images,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: Type,
+                    name: type,
+                    widget: select,
+                    options:
+                      ["Kitchen", "Bath", "Floor", "Fireplace", "Specialty"],
+                  },
+                ],
+            }

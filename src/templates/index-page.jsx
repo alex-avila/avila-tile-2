@@ -9,13 +9,13 @@ import Projects from "@components/Projects"
 import Testimonials from "@components/Testimonials"
 import FreeEstimateBanner from "@components/FreeEstimateBanner"
 
-const IndexPage = () => (
+const IndexPage = ({ images }) => (
   <HelmetProvider>
     <Default>
       <SEO title="Home" />
       <Hero />
       <BusinessInfo />
-      <Projects />
+      <Projects images={images} />
       <Testimonials />
       <FreeEstimateBanner />
     </Default>
