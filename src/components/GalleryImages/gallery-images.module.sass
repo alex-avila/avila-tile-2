@@ -1,0 +1,12 @@
+@import @style/mixins
+  
+.galleryImages
+  display: grid;
+  gap: 1.1rem
+  grid-template-columns: repeat(auto-fill, minmax(calc(100% - 1.1rem), 1fr));
+
+  +above(tablet)
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1.1rem), 1fr));
+  
+  +above(desktop)
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 1.1rem), 1fr));
