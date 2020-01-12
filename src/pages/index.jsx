@@ -1,7 +1,7 @@
 import React from "react"
 import { HelmetProvider } from "react-helmet-async"
 
-import Layout from "@components/Layout"
+import Default from "@layouts/Default"
 import SEO from "@components/Seo"
 import Hero from "@components/Hero"
 import BusinessInfo from "@components/BusinessInfo"
@@ -11,14 +11,14 @@ import FreeEstimateBanner from "@components/FreeEstimateBanner"
 
 const IndexPage = () => (
   <HelmetProvider>
-    <Layout>
+    <Default>
       <SEO title="Home" />
       <Hero />
       <BusinessInfo />
       <Projects />
       <Testimonials />
       <FreeEstimateBanner />
-    </Layout>
+    </Default>
   </HelmetProvider>
 )
 

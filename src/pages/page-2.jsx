@@ -2,17 +2,17 @@ import React from "react"
 import { HelmetProvider } from "react-helmet-async"
 import { Link } from "gatsby"
 
-import Layout from "@components/Layout"
+import Default from "@layouts/Default"
 import SEO from "@components/Seo"
 
 const SecondPage = () => (
   <HelmetProvider>
-    <Layout>
+    <Default>
       <SEO title="Page two" />
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>
       <Link to="/">Go back to the homepage</Link>
-    </Layout>
+    </Default>
   </HelmetProvider>
 )
 
