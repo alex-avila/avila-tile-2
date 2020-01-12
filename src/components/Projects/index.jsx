@@ -8,7 +8,13 @@ import styles from "./projects.module.sass"
 const Projects = () => (
   <article className={styles.projects}>
     <ContentWrapper>
-      <FancyHeading>Latest Projects</FancyHeading>
+      <div className={styles.textContent}>
+        <FancyHeading>Latest Projects</FancyHeading>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit
+          odio, dapibus elit condimentum vitae. Maecenas eget orci vitae mollis.
+        </p>
+      </div>
       <Gallery />
     </ContentWrapper>
   </article>
