@@ -1,6 +1,7 @@
 ---
 templateKey: index-page
 images:
-  - image: ""
-  - type: "Kitchen"
+  - image: /images/testimonials-background.jpg
+    type: Kitchen
 ---
+
