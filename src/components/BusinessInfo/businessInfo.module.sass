@@ -14,9 +14,11 @@
 .content
   display: grid
   gap: 2rem
-  grid-template-columns: 4fr 8fr
   position: relative
   z-index: 1
+
+  +above(tablet)
+    grid-template-columns: 4fr 8fr
 
 .dateHeading
   text-transform: uppercase
