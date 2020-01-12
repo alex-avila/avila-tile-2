@@ -2,7 +2,6 @@
   
 .fancyHeading
   display: flex
-  align-items: center
   flex-direction: column
 
   &::after
@@ -11,7 +10,19 @@
     height: 2px
     width: 2em
     background: $shiny
-    margin: 0.618em 0 0
+    margin: 1em 0 0
+
+.alignLEFT
+  text-align: left
+  align-items: flex-start
+
+.alignCENTER
+  text-align: center
+  align-items: center
+
+.alignRIGHT
+  text-align: right
+  align-items: right
     
 .colorSHINY
   color: $shiny
