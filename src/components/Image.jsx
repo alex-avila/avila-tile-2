@@ -18,7 +18,10 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(
+            maxWidth: 300
+            duotone: { highlight: "#000000", shadow: "#ffffff", opacity: 80 }
+          ) {
             ...GatsbyImageSharpFluid
           }
         }
