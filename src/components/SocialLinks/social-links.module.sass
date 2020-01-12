@@ -1,0 +1,26 @@
+@import @style/mixins
+
+.links
+  display: flex
+  align-items: center
+  padding: 1.618rem 0 0;
+
+  +above(tablet)
+    padding: 0
+
+.link
+  padding: 0.33rem
+
+.link:not(:last-child)
+  margin-right: 1em
+
+.icon
+  height: 2rem
+  width: 2rem
+  margin: 0
+
+.emailIcon
+  composes: icon
+  height: 2.4rem
+  width: 2.4rem
+  
