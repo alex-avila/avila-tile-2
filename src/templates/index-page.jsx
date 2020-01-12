@@ -9,17 +9,34 @@ import Projects from "@components/Projects"
 import Testimonials from "@components/Testimonials"
 import FreeEstimateBanner from "@components/FreeEstimateBanner"
 
-const IndexPage = ({ images }) => (
-  <HelmetProvider>
-    <Default>
-      <SEO title="Home" />
-      <Hero />
-      <BusinessInfo />
-      <Projects images={images} />
-      <Testimonials />
-      <FreeEstimateBanner />
-    </Default>
-  </HelmetProvider>
-)
+const IndexPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+
+  return (
+    <HelmetProvider>
+      <Default>
+        <SEO title="Home" />
+        <Hero />
+        <BusinessInfo />
+        <Projects images={frontmatter.images} />
+        <Testimonials />
+        <FreeEstimateBanner />
+      </Default>
+    </HelmetProvider>
+  )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      frontmatter {
+        images {
+          image
+          type
+        }
+      }
+    }
+  }
+`
