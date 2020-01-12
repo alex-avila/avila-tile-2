@@ -33,7 +33,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         images {
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 350) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           type
         }
       }

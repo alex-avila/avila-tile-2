@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
 
 import styles from "./gallery-images.module.sass"
 
 const GalleryImages = ({ images }) => {
   const mappedImages = images.map(image => (
-    <img src={image.image} alt={image.type} />
+    <Img fluid={{ ...image.image.childImageSharp.fluid, aspectRatio: 1 }} />
   ))
 
   return <div className={styles.galleryImages}>{mappedImages}</div>
