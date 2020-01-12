@@ -18,8 +18,9 @@ const typography = new Typography({
   bodyFontFamily: ["Roboto", "sans-serif"],
   headerWeight: 300,
   overrideStyles: () => ({
-    h4: {
+    "h4, h5": {
       fontWeight: "bold",
+      color: "#b0b0b0",
     },
     button: {
       border: "none",
