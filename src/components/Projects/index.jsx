@@ -6,12 +6,12 @@ import Gallery from "@components/Gallery"
 import styles from "./projects.module.sass"
 
 const Projects = () => (
-  <ContentWrapper>
-    <article className={styles.projects}>
+  <article className={styles.projects}>
+    <ContentWrapper>
       <FancyHeading>Latest Projects</FancyHeading>
       <Gallery />
-    </article>
-  </ContentWrapper>
+    </ContentWrapper>
+  </article>
 )
 
 export default Projects
