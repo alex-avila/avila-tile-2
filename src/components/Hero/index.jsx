@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Img from "gatsby-image"
+
+import ContentWrapper from "@components/ContentWrapper"
 import Button from "@components/Button"
 import styles from "./hero.module.sass"
 
@@ -26,11 +27,13 @@ const Hero = () => {
         imgStyle={{ objectPosition: "50% 10%" }}
       />
       <div className={styles.contentWrapper}>
-        <div className={styles.content}>
-          <h1>Avila Tile makes sure every detail is perfect.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button to="/page-2">View Projects</Button>
-        </div>
+        <ContentWrapper>
+          <div className={styles.content}>
+            <h1>Avila Tile makes sure every detail is perfect.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Button to="/page-2">View Projects</Button>
+          </div>
+        </ContentWrapper>
       </div>
     </div>
   )
