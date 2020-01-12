@@ -1,8 +1,28 @@
 @import @style/variables
 
+.cardWrapper
+  position: relative
+
+.quote
+  background-repeat: no-repeat
+  display: inline-flex
+  width: auto
+  position: absolute
+  height: 30px;
+
+.quoteLeft
+  composes: quote
+  top: 1rem;
+  left: -1.05rem;
+
+.quoteRight
+  composes: quote
+  bottom: 1rem
+  right: -1.05rem
+
 .card
   background: $light
-  padding: 1em
+  padding: 2em 3.5em
   text-align: center
 
   p
