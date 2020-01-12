@@ -8,7 +8,9 @@ import styles from "./testimonials.module.sass"
 const Testimonials = () => (
   <section className={styles.testimonials}>
     <ContentWrapper>
-      <FancyHeading color="dark">What our clients say</FancyHeading>
+      <FancyHeading color="dark" alignment="center">
+        What our clients say
+      </FancyHeading>
       <TestimonialsCarousel />
     </ContentWrapper>
   </section>
