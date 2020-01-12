@@ -2,14 +2,21 @@
 @import @style/mixins
   
 .businessInfo
-  padding: 2rem 1.0875rem
-  background: $dark
-  color: $light
-  text-align: center
+  position: relative
+  padding: 2rem 0
+  background: url('../../images/gold-tile-pattern.jpg')
+  background-size: 170%
+  background-position: center
 
   +above(tablet)
-    padding: 3rem 1.0875rem
+    padding: 3.05556rem 0
 
-.wrapper
-  max-width: 700px
-  margin: 0 auto
+.content
+  display: grid
+  gap: 2rem
+  grid-template-columns: 4fr 8fr
+  position: relative
+  z-index: 1
+
+.dateHeading
+  text-transform: uppercase
