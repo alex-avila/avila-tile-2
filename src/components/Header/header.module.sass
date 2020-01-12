@@ -34,12 +34,24 @@
 
   +above(tablet)
     display: block;
-  
+
 
 .navLink
   text-decoration: none
   text-transform: uppercase
   color: $dark
+  position: relative
 
   &:not(:last-child)
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
+
+.navLinkActive::after
+  content: ''
+  display: inline-block
+  position: absolute
+  bottom: -10px
+  left: 0
+  height: 2px
+  width: 100%
+  background: $shiny
+  margin: 0.618em 0 0

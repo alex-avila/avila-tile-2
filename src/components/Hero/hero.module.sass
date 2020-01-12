@@ -2,7 +2,6 @@
 @import @style/mixins
 
 .hero
-  text-align: center
   color: $light
   position: relative
 
@@ -17,10 +16,10 @@
   height: 100%
   z-index: 0
 
-.content
+.contentWrapper
   display: flex
   flex-direction: column
-  align-items: center
+  align-items: flex-start
   justify-content: center
   position: relative
   z-index: 1
@@ -30,3 +29,13 @@
 
   +above(tablet)
     padding: calc(130px / 2 + 9rem) 1.0875rem 9rem
+
+.content
+  max-width: 1140px
+  padding: 0 1.0875rem;
+  width: 100%
+  margin: 0 auto
+
+  p
+    font-family: 'Raleway'
+    font-weight: 700

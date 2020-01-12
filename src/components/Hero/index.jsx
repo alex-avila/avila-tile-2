@@ -25,10 +25,12 @@ const Hero = () => {
         fluid={data.imageSharp.fluid}
         imgStyle={{ objectPosition: "50% 10%" }}
       />
-      <div className={styles.content}>
-        <h1>Avila Tile makes sure every detail is perfect.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <Button to="/page-2">View Projects</Button>
+      <div className={styles.contentWrapper}>
+        <div className={styles.content}>
+          <h1>Avila Tile makes sure every detail is perfect.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Button to="/page-2">View Projects</Button>
+        </div>
       </div>
     </div>
   )
