@@ -2,8 +2,21 @@
 @import @style/mixins
 
 .testimonials
-  padding: 2em 0
-  background: lighten($dark, 80%)
+  position: relative
+
+.backgroundImage
+  position: absolute !important
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  z-index: 0
+
+.content
+  background: rgba(lighten($dark, 80%), 0.8)
+  position: relative
+  padding: 2rem 0
+  backdrop-filter: blur(1px)
 
   +above(tablet)
-    padding: 3rem 1.0875rem
+    padding: 3rem 0
