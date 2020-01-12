@@ -20,7 +20,11 @@ const Hero = () => {
 
   return (
     <div className={styles.hero}>
-      <Img className={styles.heroImage} fluid={data.imageSharp.fluid} />
+      <Img
+        className={styles.heroImage}
+        fluid={data.imageSharp.fluid}
+        imgStyle={{ objectPosition: "50% 10%" }}
+      />
       <div className={styles.content}>
         <h1>Avila Tile makes sure every detail is perfect.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

@@ -5,13 +5,9 @@
   text-align: center
   color: $light
   position: relative
-  height: 400px
 
   p
     font-weight: 600
-
-  +above(tablet)
-    height: 500px
 
 .heroImage
   position: absolute !important
@@ -29,5 +25,8 @@
   position: relative
   z-index: 1
   height: 100%
-  padding: 0 1.0875rem;
+  padding: calc(130px / 2 + 7rem) 1.0875rem 7rem
   background-color: rgba(0, 0, 0, 0.6)
+
+  +above(tablet)
+    padding: calc(130px / 2 + 9rem) 1.0875rem 9rem
