@@ -5,7 +5,7 @@ import styles from "./gallery-select.module.sass"
 const GallerySelect = ({ options, activeOption, setActiveOption }) => (
   <select
     className={styles.gallerySelect}
-    onChange={({ target }) => setActiveOption(target.value)}
+    onBlur={({ target }) => setActiveOption(target.value)}
   >
     {options.map((option, i) => (
       <option value={option} key={option + i}>
