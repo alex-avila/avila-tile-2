@@ -1,4 +1,6 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import ContentWrapper from "@components/ContentWrapper"
 import Image from "@components/Image"
@@ -8,8 +10,24 @@ import styles from "./businessInfo.module.sass"
 import { rhythm } from "../../utils/typography"
 
 const BusinessInfo = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        imageSharp(fluid: { originalName: { eq: "gold-tile-pattern.jpg" } }) {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    `
+  )
   return (
     <article className={styles.businessInfo}>
+      <Img
+        className={styles.backgroundImage}
+        fluid={data.imageSharp.fluid}
+        imgStyle={{ objectPosition: "50% 10%" }}
+      />
       <ContentWrapper>
         <div className={styles.content}>
           <Image className={styles.contentItem} />

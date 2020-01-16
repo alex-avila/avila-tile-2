@@ -3,13 +3,19 @@
   
 .businessInfo
   position: relative
+  overflow: hidden
   padding: 2rem 0
-  background: url('../../images/gold-tile-pattern.jpg')
-  background-size: 170%
-  background-position: center
 
   +above(tablet)
     padding: 3.05556rem 0
+
+.backgroundImage
+  position: absolute !important
+  left: 0
+  bottom: 0
+  width: 125%
+  height: 125%
+  z-index: 0
 
 .content
   display: grid
