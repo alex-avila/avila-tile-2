@@ -27,11 +27,12 @@ const links = [
   },
 ]
 
-const mappedLinks = links.map(({ text, to }) => (
+const mappedLinks = links.map(({ text, to }, i) => (
   <Link
     className={styles.navLink}
     activeClassName={styles.navLinkActive}
     to={to}
+    key={text + i}
   >
     {text}
   </Link>

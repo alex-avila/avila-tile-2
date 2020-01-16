@@ -5,8 +5,11 @@ import Img from "gatsby-image"
 import styles from "./gallery-images.module.sass"
 
 const GalleryImages = ({ images }) => {
-  const mappedImages = images.map(image => (
-    <Img fluid={{ ...image.image.childImageSharp.fluid, aspectRatio: 1 }} />
+  const mappedImages = images.map((image, i) => (
+    <Img
+      key={image.type + i}
+      fluid={{ ...image.image.childImageSharp.fluid, aspectRatio: 1 }}
+    />
   ))
 
   return <div className={styles.galleryImages}>{mappedImages}</div>
