@@ -22,7 +22,7 @@ const Image = () => {
             maxWidth: 300
             duotone: { highlight: "#000000", shadow: "#ffffff", opacity: 80 }
           ) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
