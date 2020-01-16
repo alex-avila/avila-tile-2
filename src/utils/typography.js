@@ -11,7 +11,7 @@ const typography = new Typography({
     },
     {
       name: "Raleway",
-      styles: ["700"],
+      styles: ["700&display=swap"],
     },
   ],
   headerFontFamily: ["Roboto", "sans-serif"],
