@@ -4,16 +4,6 @@ const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.5,
   scaleRatio: 2,
-  googleFonts: [
-    {
-      name: "Roboto",
-      styles: ["300", "400", "400i", "700"],
-    },
-    {
-      name: "Raleway",
-      styles: ["700&display=swap"],
-    },
-  ],
   headerFontFamily: ["Roboto", "sans-serif"],
   bodyFontFamily: ["Roboto", "sans-serif"],
   headerWeight: 300,
