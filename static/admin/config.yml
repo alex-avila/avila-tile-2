@@ -20,19 +20,75 @@ collections:
               default: "index-page",
             }
           - {
-              label: Types,
-              name: types,
-              widget: list,
-              default:
-                ["All", "Kitchen", "Bath", "Floor", "Fireplace", "Specialty"],
-            }
-          - {
-              label: "Images",
-              name: images,
-              widget: list,
+              label: Hero,
+              name: hero,
+              widget: object,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
-                  { label: Type, name: type, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                ],
+            }
+          - {
+              label: About,
+              name: about,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Projects,
+              name: projects,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Types,
+                    name: types,
+                    widget: list,
+                    default:
+                      [
+                        "All",
+                        "Kitchen",
+                        "Bath",
+                        "Floor",
+                        "Fireplace",
+                        "Specialty",
+                      ],
+                  },
+                  {
+                    label: Images,
+                    name: images,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Type, name: type, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Testimonials,
+              name: testimonials,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Testimonials,
+                    name: testimonials,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Quote, name: quote, widget: text },
+                        { label: Author, name: author, widget: string },
+                      ],
+                  },
                 ],
             }
