@@ -20,18 +20,19 @@ collections:
               default: "index-page",
             }
           - {
+              label: Types,
+              name: types,
+              widget: list,
+              default:
+                ["All", "Kitchen", "Bath", "Floor", "Fireplace", "Specialty"],
+            }
+          - {
               label: "Images",
               name: images,
               widget: list,
               fields:
                 [
                   { label: Image, name: image, widget: image },
-                  {
-                    label: Type,
-                    name: type,
-                    widget: select,
-                    options:
-                      ["Kitchen", "Bath", "Floor", "Fireplace", "Specialty"],
-                  },
+                  { label: Type, name: type, widget: string },
                 ],
             }

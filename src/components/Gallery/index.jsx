@@ -5,22 +5,23 @@ import GallerySelect from "@components/GallerySelect"
 import GalleryTabs from "@components/GalleryTabs"
 import GalleryImages from "@components/GalleryImages"
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, types }) => {
   const [activeTab, setActiveTab] = useState("All")
-  const tabs = ["All", "Kitchen", "Bath", "Floor", "Fireplace", "Specialty"]
   const filteredImages = images.filter(
-    image => activeTab === "All" || image.type === activeTab
+    image =>
+      activeTab === "All" ||
+      image.type.toLowerCase() === activeTab.toLowerCase()
   )
 
   return (
     <section>
       <GallerySelect
-        options={tabs}
+        options={types}
         activeOption={activeTab}
         setActiveOption={setActiveTab}
       />
       <GalleryTabs
-        tabs={tabs}
+        tabs={types}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
@@ -31,10 +32,12 @@ const Gallery = ({ images }) => {
 
 Gallery.propTypes = {
   images: PropTypes.arrayOf(PropTypes.object),
+  types: PropTypes.arrayOf(PropTypes.string),
 }
 
 Gallery.defaultProps = {
   images: [{}],
+  types: [],
 }
 
 export default Gallery

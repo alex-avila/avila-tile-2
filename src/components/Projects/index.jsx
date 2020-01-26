@@ -6,7 +6,7 @@ import FancyHeading from "@components/FancyHeading"
 import Gallery from "@components/Gallery"
 import styles from "./projects.module.sass"
 
-const Projects = ({ images }) => (
+const Projects = ({ images, types }) => (
   <article className={styles.projects}>
     <ContentWrapper>
       <div className={styles.textContent}>
@@ -16,17 +16,19 @@ const Projects = ({ images }) => (
           odio, dapibus elit condimentum vitae. Maecenas eget orci vitae mollis.
         </p>
       </div>
-      <Gallery images={images} />
+      <Gallery images={images} types={types} />
     </ContentWrapper>
   </article>
 )
 
 Projects.propTypes = {
   images: PropTypes.arrayOf(PropTypes.object),
+  types: PropTypes.arrayOf(PropTypes.string),
 }
 
 Projects.defaultProps = {
   images: [{}],
+  types: [],
 }
 
 export default Projects

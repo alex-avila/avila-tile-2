@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
         <Hero />
         <BusinessInfo />
-        <Projects images={frontmatter.images} />
+        <Projects images={frontmatter.images} types={frontmatter.types} />
         <Testimonials />
         <FreeEstimateBanner />
       </Default>
@@ -42,6 +42,7 @@ export const pageQuery = graphql`
           }
           type
         }
+        types
       }
     }
   }
