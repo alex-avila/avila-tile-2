@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { HelmetProvider } from "react-helmet-async"
 
 import Default from "@layouts/Default"
