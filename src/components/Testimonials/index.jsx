@@ -1,13 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Img from "gatsby-image"
+
 import ContentWrapper from "@components/ContentWrapper"
 import FancyHeading from "@components/FancyHeading"
 import TestimonialsCarousel from "@components/TestimonialsCarousel"
 import styles from "./testimonials.module.sass"
 
-const Testimonials = () => {
+const Testimonials = ({ heading, testimonials }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -32,9 +32,9 @@ const Testimonials = () => {
       <div className={styles.content}>
         <ContentWrapper>
           <FancyHeading color="dark" alignment="center">
-            What our clients say
+            {heading}
           </FancyHeading>
-          <TestimonialsCarousel />
+          <TestimonialsCarousel testimonials={testimonials} />
         </ContentWrapper>
       </div>
     </section>

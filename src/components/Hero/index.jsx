@@ -6,7 +6,7 @@ import ContentWrapper from "@components/ContentWrapper"
 import Button from "@components/Button"
 import styles from "./hero.module.sass"
 
-const Hero = () => {
+const Hero = ({ heading, subheading }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -29,8 +29,8 @@ const Hero = () => {
       <div className={styles.contentWrapper}>
         <ContentWrapper>
           <div className={styles.content}>
-            <h1>Avila Tile makes sure every detail is perfect.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1>{heading}</h1>
+            <p>{subheading}</p>
             <Button to="/page-2">View Projects</Button>
           </div>
         </ContentWrapper>

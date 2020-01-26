@@ -9,7 +9,7 @@ import Button from "@components/Button"
 import styles from "./businessInfo.module.sass"
 import { rhythm } from "../../utils/typography"
 
-const BusinessInfo = () => {
+const BusinessInfo = ({ heading, text }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -38,14 +38,8 @@ const BusinessInfo = () => {
             >
               Since 2012
             </h5>
-            <FancyHeading>Next level craftsmanship</FancyHeading>
-            <p>
-              Family owned and operated, Avila Tile prides ourselves in
-              delivering our best work to your business or residential
-              improvement. Our clientele has built itself over the last 7 years
-              based off of recommendation, professionalism and attention to
-              detail.
-            </p>
+            <FancyHeading>{heading}</FancyHeading>
+            <p>{text}</p>
             <Button>Learn More</Button>
           </div>
         </div>
