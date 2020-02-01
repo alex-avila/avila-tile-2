@@ -13,6 +13,8 @@
 
 .quoteText
   @include font-size($quote-font-sizes)
+  letter-spacing: -0.8px
+  margin-bottom: 2.1em
 
 .quoteLeft
   composes: quote
@@ -27,7 +29,7 @@
 .card
   background: $light
   text-align: center
-  padding: 1em 1.618em
+  padding: 2.1em 2.5em
 
   p
     font-style: italic
@@ -37,4 +39,5 @@
 
 .author
   @include font-size($quote-author-font-sizes)
+  letter-spacing: -0.8px
   font-weight: 600
