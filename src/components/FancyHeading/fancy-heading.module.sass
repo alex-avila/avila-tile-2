@@ -1,4 +1,5 @@
-@import @style/variables  
+@import @style/variables
+@import @style/mixins
   
 .fancyHeading
   display: flex
@@ -12,6 +13,9 @@
     width: 1.8em
     background: $shiny
     margin: 0.68em 0 0
+
+  +above(tablet)
+    margin: 0 0 0.55em
 
 .alignLEFT
   text-align: left

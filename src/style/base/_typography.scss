@@ -49,11 +49,19 @@ h1 {
 h2 {
   @include font-size($h2-font-sizes);
   letter-spacing: -1.3px;
+
+  @include above("tablet") {
+    letter-spacing: 0.6px;
+  }
 }
 
 h5 {
   @include font-size($h5-font-sizes);
   letter-spacing: 1.2px;
+
+  @include above("tablet") {
+    letter-spacing: 2.3px;
+  }
 }
 
 p {

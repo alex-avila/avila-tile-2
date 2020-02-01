@@ -55,10 +55,7 @@ $p-font-sizes: (
   ),
   map-get($breakpoints, big-phone): 17.3333px,
   map-get($breakpoints, tablet): 17.3333px,
-  map-get($breakpoints, desktop): (
-    28px,
-    1.33,
-  ),
+  map-get($breakpoints, desktop): 28px,
   map-get($breakpoints, big-desktop): 28px,
 );
 

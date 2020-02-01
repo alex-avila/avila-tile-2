@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
+import ContentWrapper from "@components/ContentWrapper"
 import Button from "@components/Button"
 import SmallNav from "@components/SmallNav"
 import styles from "./header.module.sass"
@@ -39,20 +40,22 @@ const mappedLinks = links.map(({ text, to }, i) => (
 
 const Header = () => (
   <header className={styles.header}>
-    <div className={styles.wrapper}>
-      <Link to="/" className={styles.logoWrapper}>
-        <img className={styles.logo} src={logo} alt="Avila Tile" />
-      </Link>
-      <div>
-        <div className={styles.largeNavWrapper}>
-          <nav>
-            {mappedLinks}
-            <Button to="/estimate">Free Estimate</Button>
-          </nav>
+    <ContentWrapper>
+      <div className={styles.wrapper}>
+        <Link to="/" className={styles.logoWrapper}>
+          <img className={styles.logo} src={logo} alt="Avila Tile" />
+        </Link>
+        <div>
+          <div className={styles.largeNavWrapper}>
+            <nav>
+              {mappedLinks}
+              <Button to="/estimate">Free Estimate</Button>
+            </nav>
+          </div>
+          <SmallNav className={styles.smallNavWrapper} />
         </div>
-        <SmallNav className={styles.smallNavWrapper} />
       </div>
-    </div>
+    </ContentWrapper>
   </header>
 )
 
