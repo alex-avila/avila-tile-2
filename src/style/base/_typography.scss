@@ -17,6 +17,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: $dark;
+  font-size: 17.3333px;
 }
 
 h1,
@@ -35,6 +36,10 @@ h6,
 p,
 small {
   margin: 0 0 1.2rem;
+
+  @include above("tablet") {
+    margin: 0 0 3.2rem;
+  }
 }
 
 h1 {
@@ -51,9 +56,17 @@ h5 {
   letter-spacing: 1.2px;
 }
 
-p,
+p {
+  @include font-size($p-font-sizes);
+  letter-spacing: 0;
+
+  @include above("tablet") {
+    letter-spacing: 0.9px;
+  }
+}
+
 button,
 a {
-  @include font-size($p-font-sizes);
+  @include font-size($link-font-sizes);
   letter-spacing: 0;
 }

@@ -18,7 +18,7 @@ $h1-font-sizes: (
   map-get($breakpoints, tablet): 48px,
   map-get($breakpoints, desktop): (
     90.6667px,
-    1,
+    1.1,
   ),
   map-get($breakpoints, big-desktop): 90.6667px,
 );
@@ -88,4 +88,15 @@ $quote-author-font-sizes: (
     1.33,
   ),
   map-get($breakpoints, big-desktop): 25.3333px,
+);
+
+$link-font-sizes: (
+  null: (
+    17.3333px,
+    1,
+  ),
+  map-get($breakpoints, big-phone): 17.3333px,
+  map-get($breakpoints, tablet): 17.3333px,
+  map-get($breakpoints, desktop): 20px,
+  map-get($breakpoints, big-desktop): 20px,
 );
