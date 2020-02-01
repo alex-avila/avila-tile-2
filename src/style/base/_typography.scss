@@ -34,7 +34,7 @@ h5,
 h6,
 p,
 small {
-  margin: 0 0 1.9rem;
+  margin: 0 0 1.2rem;
 }
 
 h1 {
@@ -43,15 +43,17 @@ h1 {
 
 h2 {
   @include font-size($h2-font-sizes);
+  letter-spacing: -1.3px;
 }
 
 h5 {
   @include font-size($h5-font-sizes);
+  letter-spacing: 1.2px;
 }
 
 p,
 button,
 a {
   @include font-size($p-font-sizes);
-  letter-spacing: 0.4px;
+  letter-spacing: 0;
 }
