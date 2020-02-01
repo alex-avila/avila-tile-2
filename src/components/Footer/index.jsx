@@ -8,9 +8,9 @@ const Footer = () => (
   <footer className={styles.footer}>
     <ContentWrapper>
       <div className={styles.wrapper}>
-        <p className={styles.copy}>
+        <div className={styles.copy}>
           © {new Date().getFullYear()} Avila Tile. All Rights Reserved
-        </p>
+        </div>
         <div className={styles.socialLinksWrapper}>
           <SocialLinks />
         </div>

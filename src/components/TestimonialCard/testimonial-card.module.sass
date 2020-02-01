@@ -16,6 +16,11 @@
   letter-spacing: -0.8px
   margin-bottom: 2.1em
 
+  +above(tablet)
+    letter-spacing: -0.5px
+    line-height: 1.5
+    margin-bottom: 1em
+
 .quoteLeft
   composes: quote
   top: 1rem;
@@ -34,10 +39,14 @@
   p
     font-style: italic
 
+
   +above(tablet)
-    padding: 2em 3.5em
+    padding: 2.7em 5.6em
 
 .author
   @include font-size($quote-author-font-sizes)
   letter-spacing: -0.8px
   font-weight: 600
+
+  +above(tablet)
+    letter-spacing: -0.5px

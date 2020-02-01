@@ -13,10 +13,15 @@
   padding: 3.2rem 0 2.4rem
 
   +above(tablet)
+    padding: 3.6rem 0
     flex-direction: row
 
 .copy
+  @include font-size($p-font-sizes)
   letter-spacing: 0.8px
+
+  +above(tablet)
+    @include font-size($link-font-sizes)
 
 .socialLinksWrapper
   padding: 0 0 1.2rem
