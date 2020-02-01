@@ -6,7 +6,7 @@ const FreeEstimateBanner = () => (
   <section className={styles.freeEstimateBanner}>
     <div className={styles.wrapper}>
       <h2 className={styles.heading}>Get a FREE estimate!</h2>
-      <Button variant="ghost">Contact Us</Button>
+      <Button variant="spacyghost">Contact Us</Button>
     </div>
   </section>
 )
