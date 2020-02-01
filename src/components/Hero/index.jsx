@@ -31,7 +31,9 @@ const Hero = ({ heading, subheading }) => {
           <div className={styles.content}>
             <h1>{heading}</h1>
             <p>{subheading}</p>
-            <Button to="/page-2">View Projects</Button>
+            <div className={styles.buttonWrapper}>
+              <Button to="/page-2">View Projects</Button>
+            </div>
           </div>
         </ContentWrapper>
       </div>
