@@ -22,15 +22,16 @@
   line-height: 1
 
 .logo
-  width: 80%
+  width: 240px
 
-  +above(tablet)
-    width: 115%
+  +above(desktop)
+    width: 345px
 
 .largeNavWrapper
   display: none;
 
   +above(tablet)
+    color: green
     display: block;
 
 
@@ -44,6 +45,9 @@
     margin: 0 2rem 0 0;
 
     +above(tablet)
+      margin: 0 1.6rem 0 0
+
+    +above(desktop)
       margin: 0 3.7rem 0 0
 
 .navLinkActive::after

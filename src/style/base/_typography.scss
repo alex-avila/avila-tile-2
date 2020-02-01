@@ -37,7 +37,7 @@ p,
 small {
   margin: 0 0 1.2rem;
 
-  @include above("tablet") {
+  @include above("desktop") {
     margin: 0 0 3.2rem;
   }
 }
