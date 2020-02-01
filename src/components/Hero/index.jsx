@@ -28,11 +28,13 @@ const Hero = ({ heading, subheading }) => {
       />
       <div className={styles.contentWrapper}>
         <ContentWrapper>
-          <div className={styles.content}>
-            <h1>{heading}</h1>
-            <p>{subheading}</p>
-            <div className={styles.buttonWrapper}>
-              <Button to="/page-2">View Projects</Button>
+          <div className={styles.contentWrapperInner}>
+            <div className={styles.content}>
+              <h1>{heading}</h1>
+              <p>{subheading}</p>
+              <div className={styles.buttonWrapper}>
+                <Button to="/page-2">View Projects</Button>
+              </div>
             </div>
           </div>
         </ContentWrapper>
