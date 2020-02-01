@@ -11,6 +11,9 @@
   position: absolute
   height: 30px;
 
+.quoteText
+  @include font-size($quote-font-sizes)
+
 .quoteLeft
   composes: quote
   top: 1rem;
@@ -33,4 +36,5 @@
     padding: 2em 3.5em
 
 .author
+  @include font-size($quote-author-font-sizes)
   font-weight: 600

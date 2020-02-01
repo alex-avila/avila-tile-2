@@ -1,0 +1,87 @@
+$breakpoints: (
+  big-phone: 425px,
+  tablet: 768px,
+  desktop: 1024px,
+  big-desktop: 1440px,
+);
+
+@mixin above($size) {
+  @if $size == big-phone {
+    @media (min-width: map-get($breakpoints, big-phone)) {
+      @content;
+    }
+  }
+  @if $size == tablet {
+    @media (min-width: map-get($breakpoints, tablet)) {
+      @content;
+    }
+  }
+  @if $size == desktop {
+    @media (min-width: map-get($breakpoints, desktop)) {
+      @content;
+    }
+  }
+  @if $size == big-desktop {
+    @media (min-width: map-get($breakpoints, big-desktop)) {
+      @content;
+    }
+  }
+}
+
+@mixin below($size) {
+  @if $size == big-phone {
+    @media (max-width: map-get($breakpoints, big-phone) - 1) {
+      @content;
+    }
+  }
+  @if $size == tablet {
+    @media (max-width: map-get($breakpoints, tablet) - 1) {
+      @content;
+    }
+  }
+  @if $size == desktop {
+    @media (max-width: map-get($breakpoints, desktop) - 1) {
+      @content;
+    }
+  }
+  @if $size == big-desktop {
+    @media (max-width: map-get($breakpoints, big-desktop) - 1) {
+      @content;
+    }
+  }
+}
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    } @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
+
+// Utility function for mixin font-size
+@mixin make-font-size($fs-font-size) {
+  // If $fs-font-size is a list, include
+  // both font-size and line-height
+  @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+  } @else {
+    font-size: $fs-font-size;
+  }
+}
+
+@mixin filter($filter-type, $filter-amount) {
+  filter: $filter-type + unquote("(#{$filter-amount})");
+}

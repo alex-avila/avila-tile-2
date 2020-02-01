@@ -1,0 +1,53 @@
+// Large Screen
+// h1: 90.6667px
+// h2: 53.3333px
+// body: 28px
+// h5: 26.6667px
+// quote author: 25.3333px
+// quote: 24px
+
+// "Small" Screen
+// h1: 48px
+// h2: 37.3333px
+// h5: 21.3333px
+// quote author: 21.3333px
+// quote: 20px
+// body: 17.3333px
+
+body {
+  font-family: Roboto, sans-serif;
+  color: $dark;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small {
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  @include font-size($h1-font-sizes);
+}
+
+h2 {
+  @include font-size($h2-font-sizes);
+}
+
+h5 {
+  @include font-size($h5-font-sizes);
+}
+
+p {
+  @include font-size($p-font-sizes);
+}
