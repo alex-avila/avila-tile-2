@@ -21,6 +21,14 @@ projects:
       type: Living Room
     - image: /images/IMG_20191221_165459_636.jpg
       type: Bath
+    - image: /images/tammi 1.jpg
+      type: bath
+    - image: /images/tammi 2.jpg
+      type: bath
+    - image: /images/tammi 3.jpg
+      type: bath
+    - image: /images/tammi 4.jpg
+      type: bath
   text: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit odio,
     dapibus elit condimentum vitae. Maecenas eget orci vitae mollis.
