@@ -73,5 +73,48 @@ testimonials:
 
         I would heartily recommend their services. If you want to get it right,
         using modern methods, I would use them in a heartbeat.
+    - author: Tammi M.
+      quote: >-
+        I really wish I could have picked more than 3 items to rate Avila tile
+        on. I would give Christian and his team 10 stars!! I was my own general
+        contractor on my bathroom remodel, and I'm no expert, so it was all very
+        stressful. Christian, and his dad Carlos and also Jeorge and Oli were
+        all amazing.
+
+        I could tell from the very first time he came out to give me a bid that
+        he was the guy I wanted to work with. He was super knowledgeable but
+        completely listened to what I wanted and did whatever it took to make
+        what I wanted happen. I had others give me bids, but they wanted to do
+        what was easier then to actually do what I wanted. Working with
+        different plumbers and electrician and cabinet people, Christian worked
+        around my schedule which was kind of up in the air half the time. He did
+        such an amazing beautiful job on my master bathroom and also on the tile
+        work I had done in two other bathrooms.
+
+        Not only did they do all the beautiful tile work but they also did all
+        of the demo and rebuilt my tub deck for my new drop in tub.
+
+        Apparently that's not something they do very often but they worked very
+        hard and made it perfect. When they were all finished and the glass
+        people came to measure for my glass shower doors they were impressed at
+        how perfect and square everything was. Unfortunately due to a loss in my
+        family I had to be out of town for much of the work and I completely
+        trusted Christian and everyone working with him to be in my home when I
+        was not there. That's a really big deal to be able to trust people in
+        your home. Another thing is that my shower floor is Penny tile and I had
+        seen so many pictures online where people installed it wrong and it
+        looked so silly. I picked a grout color very close to my penny tile just
+        in case, now I wish I had picked a more contrasting grout because he did
+        an absolute perfect job. Now that I have taken several showers in that
+        shower it's amazing how perfect he angled everything and it all flows
+        right to the drain. He completely built the shower floor and also the
+        niches in the shower next to the tub. I can't tell you how impressed I
+        am with the job that he did! Well I am trying to tell you I am super
+        darn impressed!! Now to the money, his bid came in lower than other bids
+        yet he did a job that I think is probably worth way more than he
+        actually charged! I would recommend Christian with Avila tile to anyone
+        and everyone!!! I won't hesitate to use him for any other tile job I
+        have! Selfishly I did not want to write a review until my bathroom was
+        complete so he wouldn't get too busy
 ---
 
