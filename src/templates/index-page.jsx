@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <HelmetProvider>
-      <Default>
+      <Default isHome>
         <SEO title="Home" />
         <Hero
           heading={frontmatter.hero.heading}

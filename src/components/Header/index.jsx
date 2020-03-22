@@ -1,5 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import ContentWrapper from "@components/ContentWrapper"
 import Button from "@components/Button"
@@ -38,8 +39,8 @@ const mappedLinks = links.map(({ text, to }, i) => (
   </Link>
 ))
 
-const Header = () => (
-  <header className={styles.header}>
+const Header = ({ isHome = false }) => (
+  <header className={isHome ? styles.headerHome : styles.header}>
     <ContentWrapper>
       <div className={styles.wrapper}>
         <Link to="/" className={styles.logoWrapper}>
@@ -58,5 +59,9 @@ const Header = () => (
     </ContentWrapper>
   </header>
 )
+
+Header.propTypes = {
+  isHome: PropTypes.bool,
+}
 
 export default Header

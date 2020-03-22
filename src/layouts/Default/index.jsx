@@ -13,7 +13,7 @@ import Header from "@components/Header"
 import Footer from "@components/Footer"
 import styles from "./default.module.sass"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isHome = false }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
       <div className={styles.wrapper}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header isHome={isHome} siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
       </div>
@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  isHome: PropTypes.bool,
 }
 
 export default Layout
