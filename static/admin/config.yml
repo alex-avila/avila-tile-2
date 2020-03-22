@@ -92,3 +92,13 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
