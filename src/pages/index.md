@@ -15,12 +15,25 @@ hero:
     in something that is both beautiful and practical for many years to come.
     Schedule a Free Estimate
 about:
-  heading: Next level craftsmanship
+  heading: Avila Tile – A Team That Genuinely Cares
   text: >-
-    Family owned and operated, Avila Tile prides ourselves in delivering our
-    best work to your business or residential improvement. Our clientele has
-    built itself over the last 7 years based off of recommendation,
-    professionalism and attention to detail.
+    As a family-owned business, we know personal service. We put our clients
+    first, and that starts with a fair and accurate assessment of your project
+    for a quote -- one that is customized on the details of the project, instead
+    of simply by a price per square foot. This detailed planning also cuts down
+    on changes after the project has begun.
+
+    This level of transparent communication ensures our clients and more smooth
+    experience and overall level of professionalism that can’t be matched. Not
+    only do we strive to understand and perfectly execute the exact vision you
+    have in mind – we treat your home with the same respect and care as if it
+    was our own.
+
+    Because at the end of the day, there’s nothing we enjoy more than the pride
+    of a job well done.
+
+
+    Schedule a Free Estimate
 projects:
   heading: Latest Projects
   images:
