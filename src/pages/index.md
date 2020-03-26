@@ -2,18 +2,7 @@
 templateKey: index-page
 hero:
   heading: Avila Tile makes sure every detail is perfect.
-  subheading: >-
-    What makes Avila Tile different? In short, it’s our dedication to the
-    details. Like a detective with a magnifying glass, we don’t miss anything
-    important – no matter how small. Unfortunately, all tiling companies are NOT
-    the same in this regard. Paying attention to “details” like using the
-    correct waterproofing membranes, understanding the differences between types
-    of thin set for different tile sizes and materials, or ensuring the most
-    appropriate installation methods for the type of subfloor you have – these
-    things are not common. That’s why, with Avila Tile you’ll ultimately save
-    both time and money by having your job done right the first time, resulting
-    in something that is both beautiful and practical for many years to come.
-    Schedule a Free Estimate
+  subheading: lkdjf
 about:
   heading: Avila Tile – A Team That Genuinely Cares
   text: >-
