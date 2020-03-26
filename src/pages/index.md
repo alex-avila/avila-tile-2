@@ -53,9 +53,18 @@ projects:
       type: bath
     - image: /images/tammi 4.jpg
       type: bath
-  text: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit odio,
-    dapibus elit condimentum vitae. Maecenas eget orci vitae mollis.
+  text: >
+    What kind of tile interests you most? Are you a ceramic or porcelain person?
+    Perhaps you prefer natural stones like marble, travertine, or slate – or
+    something more modern like glass, quarry, Talavera, or metal. Combining our
+    knowledge of the latest innovations in technology and materials allows us to
+    customize based on the vision you have for your space.
+
+
+    Reach out today and let’s get started!
+
+
+    Schedule a Free Estimate
   types:
     - All
     - Kitchen
