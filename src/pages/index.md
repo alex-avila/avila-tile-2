@@ -2,7 +2,18 @@
 templateKey: index-page
 hero:
   heading: Avila Tile makes sure every detail is perfect.
-  subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  subheading: >-
+    What makes [Company Name] different? In short, it’s our dedication to the
+    details. Like a detective with a magnifying glass, we don’t miss anything
+    important – no matter how small. Unfortunately, all tiling companies are NOT
+    the same in this regard. Paying attention to “details” like using the
+    correct waterproofing membranes, understanding the differences between types
+    of thin set for different tile sizes and materials, and ensuring the most
+    appropriate installation methods for the type of subfloor you have – these
+    things are not common. That’s why, with [Company Name] you’ll ultimately
+    save both time and money by having your job done right the first time,
+    resulting in something that is both beautiful and practical for many years
+    to come. Schedule a Free Estimate
 about:
   heading: Next level craftsmanship
   text: >-
