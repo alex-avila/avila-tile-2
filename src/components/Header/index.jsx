@@ -43,7 +43,7 @@ const Header = ({ isHome = false }) => (
   <header className={isHome ? styles.headerHome : styles.header}>
     <ContentWrapper>
       <div className={styles.wrapper}>
-        <Link to="/" className={styles.logoWrapper}>
+        <Link to="/">
           <img className={styles.logo} src={logo} alt="Avila Tile" />
         </Link>
         <div>

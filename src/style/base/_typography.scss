@@ -14,67 +14,67 @@
 // quote: 20px
 // body: 17.3333px
 
-body {
-  font-family: Roboto, sans-serif;
-  color: $dark;
-  font-size: 17.3333px;
-}
+// body {
+//   font-family: Roboto, sans-serif;
+//   color: $dark;
+//   font-size: 17.3333px;
+// }
 
-h1,
-h2,
-h3 {
-  font-weight: 300;
-  letter-spacing: -0.9px;
-}
+// h1,
+// h2,
+// h3 {
+//   font-weight: 300;
+//   letter-spacing: -0.9px;
+// }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-small {
-  margin: 0 0 1.2rem;
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// small {
+//   margin: 0 0 1.2rem;
 
-  @include above("desktop") {
-    margin: 0 0 3.2rem;
-  }
-}
+//   @include above("desktop") {
+//     margin: 0 0 3.2rem;
+//   }
+// }
 
-h1 {
-  @include font-size($h1-font-sizes);
-}
+// h1 {
+//   @include font-size($h1-font-sizes);
+// }
 
-h2 {
-  @include font-size($h2-font-sizes);
-  letter-spacing: -1.3px;
+// h2 {
+//   @include font-size($h2-font-sizes);
+//   letter-spacing: -1.3px;
 
-  @include above("tablet") {
-    letter-spacing: 0.6px;
-  }
-}
+//   @include above("tablet") {
+//     letter-spacing: 0.6px;
+//   }
+// }
 
-h5 {
-  @include font-size($h5-font-sizes);
-  letter-spacing: 1.2px;
+// h5 {
+//   @include font-size($h5-font-sizes);
+//   letter-spacing: 1.2px;
 
-  @include above("tablet") {
-    letter-spacing: 2.3px;
-  }
-}
+//   @include above("tablet") {
+//     letter-spacing: 2.3px;
+//   }
+// }
 
-p {
-  @include font-size($p-font-sizes);
-  letter-spacing: 0;
+// p {
+//   @include font-size($p-font-sizes);
+//   letter-spacing: 0;
 
-  @include above("tablet") {
-    letter-spacing: 0.9px;
-  }
-}
+//   @include above("tablet") {
+//     letter-spacing: 0.9px;
+//   }
+// }
 
-button,
-a {
-  @include font-size($link-font-sizes);
-  letter-spacing: 0;
-}
+// button,
+// a {
+//   @include font-size($link-font-sizes);
+//   letter-spacing: 0;
+// }
