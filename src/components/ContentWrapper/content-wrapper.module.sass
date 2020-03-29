@@ -1,6 +1,13 @@
+@import @style/variables
+@import @style/mixins
+
 .contentWrapper
   margin: 0 auto
   width: 100%
   max-width: 1200px
   padding-left: 1rem
   padding-right: 1rem
+
+  +above(tablet)
+    padding-left: 1.618rem
+    padding-right: 1.618rem
