@@ -21,6 +21,7 @@ const BusinessInfo = ({ heading, text }) => {
       }
     `
   )
+
   return (
     <article className={styles.businessInfo}>
       <Img
