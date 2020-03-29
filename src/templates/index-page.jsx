@@ -26,6 +26,7 @@ const IndexPage = ({ data }) => {
           text={frontmatter.about.text}
         />
         <Projects
+          theme="dark"
           images={frontmatter.projects.images}
           types={frontmatter.projects.types}
         />

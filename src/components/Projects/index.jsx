@@ -6,15 +6,22 @@ import FancyHeading from "@components/FancyHeading"
 import Gallery from "@components/Gallery"
 import styles from "./projects.module.sass"
 
-const Projects = ({ images, types }) => (
-  <article className={styles.projects}>
-    <ContentWrapper>
+const Projects = ({
+  heading = "Latest Projects",
+  copy,
+  theme = "light",
+  images,
+  types,
+}) => (
+  <article
+    className={
+      theme === "light" ? styles.projectsLightTheme : styles.projectsDarkTheme
+    }
+  >
+    <ContentWrapper withVerticalPadding>
       <div className={styles.textContent}>
-        <FancyHeading>Latest Projects</FancyHeading>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit
-          odio, dapibus elit condimentum vitae. Maecenas eget orci vitae mollis.
-        </p>
+        <FancyHeading>{heading}</FancyHeading>
+        <p>{copy}</p>
       </div>
       <Gallery images={images} types={types} />
     </ContentWrapper>
@@ -22,6 +29,9 @@ const Projects = ({ images, types }) => (
 )
 
 Projects.propTypes = {
+  heading: PropTypes.string,
+  copy: PropTypes.string,
+  theme: PropTypes.string,
   images: PropTypes.arrayOf(PropTypes.object),
   types: PropTypes.arrayOf(PropTypes.string),
 }
