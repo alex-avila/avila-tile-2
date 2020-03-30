@@ -12,28 +12,25 @@ const AboutPage = ({
   data: {
     markdownRemark: { frontmatter },
   },
-}) => {
-  console.log(frontmatter)
-  return (
-    <HelmetProvider>
-      <Default>
-        <SEO title="About" />
-        <AboutSection
-          heading={frontmatter.about.heading}
-          image={frontmatter.about.image}
-          body={frontmatter.about.body}
-          bottomImage={frontmatter.about.bottom_image}
-        />
-        <ServicesSection
-          heading={frontmatter.services.heading}
-          body={frontmatter.services.body}
-          services={frontmatter.services.services}
-        />
-        <FreeEstimateBanner />
-      </Default>
-    </HelmetProvider>
-  )
-}
+}) => (
+  <HelmetProvider>
+    <Default>
+      <SEO title="About" />
+      <AboutSection
+        heading={frontmatter.about.heading}
+        image={frontmatter.about.image}
+        body={frontmatter.about.body}
+        bottomImage={frontmatter.about.bottom_image}
+      />
+      <ServicesSection
+        heading={frontmatter.services.heading}
+        body={frontmatter.services.body}
+        services={frontmatter.services.services}
+      />
+      <FreeEstimateBanner />
+    </Default>
+  </HelmetProvider>
+)
 
 export default AboutPage
 
