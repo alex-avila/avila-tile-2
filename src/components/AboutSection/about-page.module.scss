@@ -1,0 +1,31 @@
+@import "@style/variables";
+@import "@style/mixins";
+
+.aboutSection {
+  :global(.gatsby-image-wrapper) {
+    margin: 0.66rem 0;
+
+    @include above(tablet) {
+      margin: 0;
+    }
+  }
+}
+
+.content p:first-child {
+  color: lighten($dark, 40%);
+}
+
+.contentImageWrapper {
+  @include above(tablet) {
+    float: left;
+    width: 300px;
+    max-width: 100%;
+    padding: 0 1.75rem 1rem 0;
+  }
+}
+
+.aboutSection .content .bottomImage {
+  width: 100%;
+  max-height: 250px;
+  margin: 1rem 0 0;
+}

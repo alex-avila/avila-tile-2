@@ -7,7 +7,7 @@ import FancyHeading from "@components/FancyHeading"
 
 import styles from "./services-section.module.sass"
 
-const ServicesSection = () => {
+const ServicesSection = ({ heading, body, services }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -31,31 +31,17 @@ const ServicesSection = () => {
       />
       <ContentWrapper withVerticalPadding>
         <div className={styles.content}>
-          <FancyHeading>Our Services</FancyHeading>
+          <FancyHeading>{heading}</FancyHeading>
           <div>
-            <p>
-              Avila Tile is a professional, fully licensed and insured tile
-              installation company sesrving all of the Denver Metro Area, and
-              sorrounding areas withing a 30 mile radius.
-            </p>
-            <p>
-              We work with all types of tile including ceramic, porcelain,
-              glass, marble, metal and natural stone. Our experts have over 15
-              years experience installing tile of all kinds for both residential
-              and commercial clients.
-            </p>
-            <p>Our installation services include:</p>
-            <ul className={styles.servicesList}>
-              <li>Full remodels</li>
-              <li>New construction</li>
-              <li>Kitchen backspashes</li>
-              <li>Regular showers</li>
-              <li>Steam showers</li>
-              <li>Shower pans</li>
-              <li>Fireplaces</li>
-              <li>Floors</li>
-              <li>Stain resistant grouts</li>
-            </ul>
+            {body}
+            <div className={styles.servicesListWrapper}>
+              <p>Our installation services include:</p>
+              <ul className={styles.servicesList}>
+                {services.map(({ service }) => (
+                  <li key={service}>{service}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </ContentWrapper>

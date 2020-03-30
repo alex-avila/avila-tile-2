@@ -8,13 +8,27 @@ import AboutSection from "@components/AboutSection"
 import ServicesSection from "@components/ServicesSection"
 import FreeEstimateBanner from "@components/FreeEstimateBanner"
 
-const AboutPage = ({ data }) => {
+const AboutPage = ({
+  data: {
+    markdownRemark: { frontmatter },
+  },
+}) => {
+  console.log(frontmatter)
   return (
     <HelmetProvider>
       <Default>
-        <SEO title="Home" />
-        <AboutSection />
-        <ServicesSection />
+        <SEO title="About" />
+        <AboutSection
+          heading={frontmatter.about.heading}
+          image={frontmatter.about.image}
+          body={frontmatter.about.body}
+          bottomImage={frontmatter.about.bottom_image}
+        />
+        <ServicesSection
+          heading={frontmatter.services.heading}
+          body={frontmatter.services.body}
+          services={frontmatter.services.services}
+        />
         <FreeEstimateBanner />
       </Default>
     </HelmetProvider>
@@ -27,7 +41,32 @@ export const pageQuery = graphql`
   query AboutPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
-        templateKey
+        about {
+          heading
+          image {
+            childImageSharp {
+              fluid(maxWidth: 350, sizes: "(max-width: 375px) 300px, 350px") {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          body
+          bottom_image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+
+        services {
+          heading
+          body
+          services {
+            service
+          }
+        }
       }
     }
   }

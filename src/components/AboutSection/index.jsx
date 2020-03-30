@@ -4,11 +4,10 @@ import Img from "gatsby-image"
 
 import ContentWrapper from "@components/ContentWrapper"
 import FancyHeading from "@components/FancyHeading"
-import Image from "@components/Image"
 
-import styles from "./about-page.module.sass"
+import styles from "./about-page.module.scss"
 
-const AboutSection = () => {
+const AboutSection = ({ heading, image, body, bottomImage }) => {
   const data = useStaticQuery(graphql`
     query {
       bottomImage: file(relativePath: { eq: "hero-background.jpg" }) {
@@ -24,46 +23,12 @@ const AboutSection = () => {
   return (
     <article className={styles.aboutSection}>
       <ContentWrapper withVerticalPadding>
-        <FancyHeading>Who We Are</FancyHeading>
+        <FancyHeading>{heading}</FancyHeading>
         <div className={styles.content}>
           <div className={styles.contentImageWrapper}>
-            <Image />
+            <Img fluid={image.childImageSharp.fluid} />
           </div>
-          <div className={styles.contentItem}>
-            <p>
-              Family owned and operated, Avila Tile prides ourselves in
-              delivering our best work to your business or residential
-              improvement.
-            </p>
-            <p>
-              Our clientele has built itself over the last 7 years based off
-              recommendation, professionalism and attention to detail. Lorem
-              ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip. Lorem ipsum
-              dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-              nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper suscipit lobortis nisl ut aliquip.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip. Lorem ipsum
-              dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-              nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper suscipit lobortis nisl ut aliquip.
-            </p>
-          </div>
+          <div className={styles.contentItem}>{body}</div>
           <Img
             className={styles.bottomImage}
             fluid={data.bottomImage.childImageSharp.fluid}

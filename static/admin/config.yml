@@ -102,6 +102,34 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
+          - {
+              label: About,
+              name: about,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Body, name: body, widget: markdown },
+                  { label: Bottom Image, name: bottom_image, widget: image },
+                ],
+            }
+          - {
+              label: Services,
+              name: services,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                  {
+                    label: Services,
+                    name: services,
+                    widget: list,
+                    fields: [{ label: Service, name: service, widget: string }],
+                  },
+                ],
+            }
       - file: "src/pages/gallery.md"
         label: "Gallery Page"
         name: "gallery"
