@@ -4,7 +4,7 @@ about:
   heading: Who We Are
   image: /images/IMG_20190930_084908_902.jpg
   body: >-
-    Family owned and operated, Avila Tile prices ourselves in delivering our
+    Family owned and operated, **Avila Tile** prices ourselves in delivering our
     best work to your business or residential improvement.
 
 
