@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import ContentWrapper from "@components/ContentWrapper"
 import FancyHeading from "@components/FancyHeading"
+import MarkdownContent from "@components/MarkdownContent"
 
 import styles from "./about-page.module.scss"
 
@@ -28,7 +29,9 @@ const AboutSection = ({ heading, image, body, bottomImage }) => {
           <div className={styles.contentImageWrapper}>
             <Img fluid={image.childImageSharp.fluid} />
           </div>
-          <div className={styles.contentItem}>{body}</div>
+          <div className={styles.contentItem}>
+            <MarkdownContent content={body} />
+          </div>
           <Img
             className={styles.bottomImage}
             fluid={data.bottomImage.childImageSharp.fluid}

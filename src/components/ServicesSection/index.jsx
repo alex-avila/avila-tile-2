@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import ContentWrapper from "@components/ContentWrapper"
 import FancyHeading from "@components/FancyHeading"
+import MarkdownContent from "@components/MarkdownContent"
 
 import styles from "./services-section.module.sass"
 
@@ -33,7 +34,7 @@ const ServicesSection = ({ heading, body, services }) => {
         <div className={styles.content}>
           <FancyHeading>{heading}</FancyHeading>
           <div>
-            {body}
+            <MarkdownContent content={body} />
             <div className={styles.servicesListWrapper}>
               <p>Our installation services include:</p>
               <ul className={styles.servicesList}>
