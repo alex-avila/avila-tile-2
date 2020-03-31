@@ -64,6 +64,32 @@ projects:
       type: kitchen
     - image: /images/2by1uaui.jpeg
       type: kitchen
+    - image: /images/img_20200215_191134_238.jpg
+      type: bath
+    - image: /images/received_502526287079252.jpeg
+      type: kitchen
+    - image: /images/received_228294271864431.jpeg
+      type: kitchen
+    - image: /images/received_529876020865946.jpeg
+      type: kitchen
+    - image: /images/received_502526287079252.jpeg
+      type: kitchen
+    - image: /images/received_518518869096154.jpeg
+      type: kitchen
+    - image: /images/received_3057478740986983.jpeg
+      type: kitchen
+    - image: /images/img_20200221_192939_324.jpg
+      type: bath
+    - image: /images/img_20200221_193335_610.jpg
+      type: bath
+    - image: /images/img_20200223_151852_571.jpg
+      type: fireplace
+    - image: /images/img_20200204_212020_402.jpg
+      type: fireplace
+    - image: /images/img_20200204_212020_404.jpg
+      type: fireplace
+    - image: /images/img_20200204_212020_410.jpg
+      type: fireplace
   text: >
     What kind of tile interests you most? Are you a ceramic or porcelain person?
     Perhaps you prefer natural stones like marble, travertine, or slate – or
