@@ -44,6 +44,8 @@ projects:
       type: bath
     - image: /images/2148.jpg
       type: bath
+    - image: /images/2184-1-.jpg
+      type: bath
   text: >
     What kind of tile interests you most? Are you a ceramic or porcelain person?
     Perhaps you prefer natural stones like marble, travertine, or slate – or
