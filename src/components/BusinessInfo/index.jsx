@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import ContentWrapper from "@components/ContentWrapper"
-import Image from "@components/Image"
 import FancyHeading from "@components/FancyHeading"
 import Button from "@components/Button"
 import styles from "./businessInfo.module.sass"
