@@ -30,43 +30,43 @@ projects:
     - image: /images/testimonials-background.jpg
       type: Kitchen
     - image: /images/hero-background.jpg
-      type: Bath
+      type: Bathroom
     - image: /images/IMG_20191231_155218_912.jpg
-      type: Living Room
+      type: Commercial
     - image: /images/IMG_20191221_165459_636.jpg
-      type: Bath
+      type: Bathroom
     - image: /images/tammi 1.jpg
-      type: bath
+      type: Bathroom
     - image: /images/tammi 2.jpg
-      type: bath
+      type: Bathroom
     - image: /images/tammi 3.jpg
-      type: bath
+      type: Bathroom
     - image: /images/tammi 4.jpg
-      type: bath
+      type: Bathroom
     - image: /images/2148.jpg
-      type: bath
+      type: Bathroom
     - image: /images/2184-1-.jpg
-      type: bath
+      type: Bathroom
     - image: /images/yynak3ue.jpeg
-      type: bath
+      type: Bathroom
     - image: /images/hydqbdke.jpeg
-      type: bath
+      type: Bathroom
     - image: /images/muliu0mx.jpeg
-      type: bath
+      type: Bathroom
     - image: /images/3jjmsfgm.jpeg
-      type: bath
+      type: Bathroom
     - image: /images/v8uwuhs7.jpeg
-      type: kitchen
+      type: Kitchen
     - image: /images/dxlk4ixo.jpeg
-      type: kitchen
+      type: Kitchen
     - image: /images/0kchkblg.jpeg
-      type: kitchen
+      type: Kitchen
     - image: /images/9jhtvfjj.jpeg
-      type: kitchen
+      type: Kitchen
     - image: /images/2by1uaui.jpeg
-      type: kitchen
+      type: Kitchen
     - image: /images/img_20200215_191134_238.jpg
-      type: bath
+      type: Bathroom
     - image: /images/received_502526287079252.jpeg
       type: kitchen
     - image: /images/received_228294271864431.jpeg
@@ -80,9 +80,9 @@ projects:
     - image: /images/received_3057478740986983.jpeg
       type: kitchen
     - image: /images/img_20200221_192939_324.jpg
-      type: bath
+      type: Bathroom
     - image: /images/img_20200221_193335_610.jpg
-      type: bath
+      type: Bathroom
     - image: /images/img_20200223_151852_571.jpg
       type: fireplace
     - image: /images/img_20200204_212020_402.jpg
@@ -106,11 +106,11 @@ projects:
   types:
     - All
     - Kitchen
-    - Bath
+    - Bathroom
     - Floor
     - Fireplace
     - Specialty
-    - Living Room
+    - Commercial
 testimonials:
   heading: What our clients say
   testimonials:
