@@ -147,6 +147,17 @@ collections:
               default: "Gallery of Our Work",
             }
           - { label: "Description", name: "description", widget: "text" }
+          - { label: Types, name: types, widget: list }
+          - {
+              label: Images,
+              name: images,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Type, name: type, widget: string },
+                ],
+            }
       - file: "src/pages/contact.md"
         label: "Contact Page"
         name: "contact"
@@ -161,6 +172,6 @@ collections:
               label: "Heading",
               name: "heading",
               widget: "string",
-              default: "Gallery of Our Work",
+              default: "Contact Us for a Free Estimate!",
             }
           - { label: "Description", name: "description", widget: "text" }
