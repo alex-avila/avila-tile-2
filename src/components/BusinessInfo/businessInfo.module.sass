@@ -19,14 +19,26 @@
 
 .content
   display: grid
-  gap: 2.5rem
+  gap: 2rem
   position: relative
   z-index: 1
 
   +above(tablet)
+    gap: 1rem
+
+  +above(desktop)
+    gap: 2rem
     grid-template-columns: 5fr 7fr
 
-.contentItem
+.contentItem:first-child
+  +above(tablet)
+    width: 375px
+    margin: auto
+
+  +above(desktop)
+    width: 387px
+
+.contentItem:last-child
   +above(tablet)
     padding: 2.8em 0 0 1.7em
 

@@ -4,6 +4,7 @@ hero:
   heading: Avila Tile makes sure every detail is perfect.
   subheading: lkdjf
 about:
+  image: /images/testimonials-background.jpg
   heading: Avila Tile – A Team That Genuinely Cares
   text: >-
     As a family-owned business, we know personal service. We put our clients

@@ -9,7 +9,7 @@ import Button from "@components/Button"
 import styles from "./businessInfo.module.sass"
 import { rhythm } from "../../utils/typography"
 
-const BusinessInfo = ({ heading, text }) => {
+const BusinessInfo = ({ image, heading, text }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -31,7 +31,10 @@ const BusinessInfo = ({ heading, text }) => {
       />
       <ContentWrapper>
         <div className={styles.content}>
-          <Image className={styles.contentItem} />
+          <Img
+            fluid={image.childImageSharp.fluid}
+            className={styles.contentItem}
+          />
           <div className={styles.contentItem}>
             <h5
               className={styles.dateHeading}

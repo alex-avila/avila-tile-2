@@ -22,6 +22,7 @@ const IndexPage = ({ data }) => {
           subheading={frontmatter.hero.subheading}
         />
         <BusinessInfo
+          image={frontmatter.about.image}
           heading={frontmatter.about.heading}
           text={frontmatter.about.text}
         />
@@ -51,6 +52,13 @@ export const pageQuery = graphql`
           subheading
         }
         about {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 350, sizes: "(max-width: 375px) 300px, 350px") {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
           heading
           text
         }
