@@ -140,6 +140,13 @@ collections:
               widget: "hidden",
               default: "gallery-page",
             }
+          - {
+              label: "Heading",
+              name: "heading",
+              widget: "string",
+              default: "Gallery of Our Work",
+            }
+          - { label: "Description", name: "description", widget: "text" }
       - file: "src/pages/contact.md"
         label: "Contact Page"
         name: "contact"
@@ -150,3 +157,10 @@ collections:
               widget: "hidden",
               default: "contact-page",
             }
+          - {
+              label: "Heading",
+              name: "heading",
+              widget: "string",
+              default: "Gallery of Our Work",
+            }
+          - { label: "Description", name: "description", widget: "text" }

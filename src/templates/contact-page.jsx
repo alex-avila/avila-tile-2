@@ -6,12 +6,16 @@ import Default from "@layouts/Default"
 import ContactForm from "@components/ContactForm"
 import SEO from "@components/Seo"
 
-const ContactPage = ({ data }) => {
+const ContactPage = ({
+  data: {
+    markdownRemark: { frontmatter },
+  },
+}) => {
   return (
     <HelmetProvider>
       <Default>
-        <SEO title="Home" />
-        <ContactForm copy="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." />
+        <SEO title="Contact" />
+        <ContactForm {...frontmatter} />
       </Default>
     </HelmetProvider>
   )
@@ -23,7 +27,8 @@ export const pageQuery = graphql`
   query ContactPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
-        templateKey
+        heading
+        description
       }
     }
   }

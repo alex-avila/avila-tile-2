@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import PropTypes from "prop-types"
 
 import ContentWrapper from "@components/ContentWrapper"
 import FancyHeading from "@components/FancyHeading"
@@ -8,7 +9,7 @@ import Button from "@components/Button"
 
 import styles from "./contact-form.module.sass"
 
-const ContactForm = ({ copy }) => {
+const ContactForm = ({ heading, description }) => {
   const formElements = [
     [
       {
@@ -114,12 +115,17 @@ const ContactForm = ({ copy }) => {
 
   return (
     <ContentWrapper withVerticalPadding>
-      <FancyHeading>Contact Us for a FREE Estimate!</FancyHeading>
-      <p>{copy}</p>
+      <FancyHeading>{heading}</FancyHeading>
+      <p>{description}</p>
       {mappedFormElements(formElements)}
       <Button type="submit">Submit</Button>
     </ContentWrapper>
   )
+}
+
+ContactForm.propTypes = {
+  heading: PropTypes.string,
+  description: PropTypes.string,
 }
 
 export default ContactForm
