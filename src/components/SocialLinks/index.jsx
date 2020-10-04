@@ -2,24 +2,21 @@ import React from "react"
 
 import styles from "./social-links.module.sass"
 
-import facebookIcon from "../../images/facebook-icon.svg"
-import instagramIcon from "../../images/instagram-icon.svg"
-import emailIcon from "../../images/email-icon.svg"
 const iconsOptions = [
+  // {
+  //   icon: require("../../images/facebook-icon.svg"),
+  //   alt: "Facebook",
+  //   link: "https://www.instagram.com/avila.tile/",
+  // },
   {
-    icon: facebookIcon,
-    alt: "Facebook",
-    link: "https://www.instagram.com/avila.tile/",
-  },
-  {
-    icon: instagramIcon,
+    icon: require("../../images/instagram-icon.svg"),
     alt: "Instagram",
     link: "https://www.instagram.com/avila.tile/",
   },
   {
-    icon: emailIcon,
+    icon: require("../../images/email-icon.svg"),
     alt: "Email",
-    link: "https://www.instagram.com/avila.tile/",
+    link: "mailto:avila_912@hotmail.com",
   },
 ]
 
