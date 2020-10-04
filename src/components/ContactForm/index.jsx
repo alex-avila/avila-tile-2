@@ -117,8 +117,10 @@ const ContactForm = ({ heading, description }) => {
     <ContentWrapper withVerticalPadding>
       <FancyHeading>{heading}</FancyHeading>
       <p>{description}</p>
-      {mappedFormElements(formElements)}
-      <Button type="submit">Submit</Button>
+      <form name="contact" method="POST" netlify>
+        {mappedFormElements(formElements)}
+        <Button type="submit">Submit</Button>
+      </form>
     </ContentWrapper>
   )
 }
