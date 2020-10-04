@@ -9,22 +9,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `images`,
-        path: `${__dirname}/static/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `fonts`,
+        path: `${__dirname}/static/images`,
+        name: `images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/fonts/`,
+        name: `fonts`,
       },
     },
     {
@@ -43,7 +43,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: `images`,
+              statisFolderName: 'static/images'
             },
           },
           {
