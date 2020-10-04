@@ -117,7 +117,8 @@ const ContactForm = ({ heading, description }) => {
     <ContentWrapper withVerticalPadding>
       <FancyHeading>{heading}</FancyHeading>
       <p>{description}</p>
-      <form name="contact" method="POST" netlify>
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         {mappedFormElements(formElements)}
         <Button type="submit">Submit</Button>
       </form>
