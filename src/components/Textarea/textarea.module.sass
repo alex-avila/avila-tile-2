@@ -7,5 +7,11 @@
   margin: calc(1.618rem / 2) 0
   padding: 1rem
   border-radius: 5px
+  border: 0 solid #ff0033;
   resize: vertical
   background: rgba($dark, 0.05)
+  transition: border-width 0.4s cubic-bezier(0, 0, 0.17, 0.99)
+
+.textareaInvalid
+  composes: textarea
+  border-left: 4px solid #ff0033
