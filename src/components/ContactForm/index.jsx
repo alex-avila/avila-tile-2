@@ -119,6 +119,9 @@ const ContactForm = ({ heading, description }) => {
       <p>{description}</p>
       <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
+        <p style="display: none;">
+          <label>Don’t fill this out if you're human: <input name="bot-field" autoComplete="off" tabIndex="-1"/></label>
+        </p>
         {mappedFormElements(formElements)}
         <Button type="submit">Submit</Button>
       </form>
