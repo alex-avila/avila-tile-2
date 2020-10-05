@@ -34,7 +34,7 @@ const SmallNav = () => {
           <Link className={styles.navLink} to="/contact">
             Contact
           </Link>
-          <Link className={styles.navLink} to="/estimate">
+          <Link className={styles.navLink} to="/contact">
             Free Estimate
           </Link>
         </nav>

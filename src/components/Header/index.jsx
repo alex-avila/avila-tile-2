@@ -50,7 +50,7 @@ const Header = ({ isHome = false }) => (
           <div className={styles.largeNavWrapper}>
             <nav>
               {mappedLinks}
-              <Button to="/estimate">Free Estimate</Button>
+              <Button to="/contact">Free Estimate</Button>
             </nav>
           </div>
           <SmallNav className={styles.smallNavWrapper} />
